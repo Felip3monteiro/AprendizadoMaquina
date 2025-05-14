@@ -22,6 +22,13 @@ O projeto segue a seguinte organização:
 
 ---
 
+### 🔧 Configuração Inicial
+
+1. Baixe e adicione a biblioteca Weka ao projeto.
+2. Certifique-se de que os arquivos `.arff` estão disponíveis no diretório correto.
+
+---
+
 ## ⚙️ Instalação e Configuração
 
 ### 📋 Pré-requisitos
@@ -30,15 +37,35 @@ O projeto segue a seguinte organização:
 2. **Biblioteca Weka**: Inclua as dependecias arquivo `pom.xml` do Weka no seu projeto caso esteja utilizando o `Maven`.
 3. **IDE (opcional)**: Recomendamos o uso de **IntelliJ IDEA**. 💻
 
+### 🛠️ Dependência do Weka no `pom.xml`
+
+Seu `pom.xml` precisa ter a dependência do Weka corretamente declarada. Aqui está um exemplo:
+
+```xml
+<dependency>
+    <groupId>nz.ac.waikato.cms.weka</groupId>
+    <artifactId>weka-stable</artifactId>
+    <version>3.8.6</version> <!-- ou a versão que você estiver usando -->
+</dependency>
+```
+
 ### 🌀 Clonar o Repositório
 
 Use o seguinte comando para clonar o projeto:
 
+```bash
+# Clone o repositório
+git clone https://github.com/Felip3monteiro/AprendizadoMaquina.git
 
-### 🔧 Configuração Inicial
+# Acesse a pasta do projeto
+cd AprendizadoMaquina
 
-1. Baixe e adicione a biblioteca Weka ao projeto.
-2. Certifique-se de que os arquivos `.arff` estão disponíveis no diretório correto.
+# Compile o projeto
+mvn compile
+
+# Execute a classe principal (substitua pelo nome da sua classe principal)
+mvn exec:java -Dexec.mainClass="org.classifica.Main"
+````
 
 ---
 
