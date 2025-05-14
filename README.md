@@ -27,7 +27,7 @@ O projeto segue a seguinte organização:
 ### 📋 Pré-requisitos
 
 1. **Java 24+**: Certifique-se de ter o Java na versão adequada.
-2. **Biblioteca Weka**: Inclua o arquivo `.jar` do Weka no `classpath` do seu projeto.
+2. **Biblioteca Weka**: Inclua as dependecias arquivo `pom.xml` do Weka no seu projeto caso esteja utilizando o `Maven`.
 3. **IDE (opcional)**: Recomendamos o uso de **IntelliJ IDEA**. 💻
 
 ### 🌀 Clonar o Repositório
